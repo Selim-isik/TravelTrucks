@@ -1,4 +1,4 @@
-# TravelTrucks 🚐
+# TravelTrucks (Turkish) 🚐
 
 Bu proje, karavan kiralamak isteyen kullanıcılar için hazırladığım bir katalog ve rezervasyon uygulamasıdır. Figma tasarımına sadık kalarak, React ve Redux Toolkit kullanarak geliştirdim.
 
