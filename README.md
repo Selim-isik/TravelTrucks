@@ -9,12 +9,19 @@ Bu proje, karavan kiralamak isteyen kullanıcılar için hazırladığım bir ka
 - **Favoriler:** Beğenilen araçların unutulmaması için yerel hafızayı kullanan bir favori listesi ekledim.
 - **Rezervasyon Formu:** Seçilen karavanın detay sayfasında çalışan ve başarıyla gönderildiğinde bildirim veren bir form oluşturdum.
 
-## Projeyi Çalıştırma
+---
 
-1. Repoyu klonlayın: `git clone https://github.com/Selim-isik/TravelTrucks.git`
-2. Bağımlılıkları kurun: `npm install`
-3. Projeyi ayağa kaldırın: `npm run dev`
+# TravelTrucks (English) 🚐
 
-## Yazar
+This is a camper rental catalog and booking application built with React and Redux Toolkit, strictly following the provided Figma design.
+
+## Features
+
+- **Catalog & Pagination:** A dynamic listing page with a "Load More" functionality for seamless data fetching.
+- **Filtering System:** An advanced filtering logic to sort vehicles by equipment (AC, Kitchen, TV, etc.) and vehicle types.
+- **Favorites:** A local storage-based favorite system to keep track of preferred campers.
+- **Booking Form:** A fully functional reservation form with instant notification upon successful submission.
+
+## Author
 
 **Selim Işık**
