@@ -1,5 +1,6 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
+import { toggleFavorite } from "../../redux/favoritesSlice";
 import { IoStar, IoHeartOutline, IoHeart } from "react-icons/io5";
 import { HiOutlineMapPin } from "react-icons/hi2";
 import { LuWind, LuUtensils, LuTv } from "react-icons/lu";
@@ -8,7 +9,9 @@ import { BsFuelPump } from "react-icons/bs";
 import styles from "./CamperCard.module.css";
 
 const CamperCard = ({ camper }) => {
-  const [isFavorite, setIsFavorite] = useState(false);
+  const dispatch = useDispatch();
+  const favorites = useSelector((state) => state.favorites.items);
+  const isFavorite = favorites.includes(camper.id);
 
   const capitalize = (str) => str.charAt(0).toUpperCase() + str.slice(1);
 
@@ -29,7 +32,7 @@ const CamperCard = ({ camper }) => {
             <p className={styles.price}>€{Number(camper.price).toFixed(2)}</p>
             <button
               className={styles.heartBtn}
-              onClick={() => setIsFavorite(!isFavorite)}
+              onClick={() => dispatch(toggleFavorite(camper.id))}
             >
               {isFavorite ? (
                 <IoHeart color="#E44848" size={24} />
